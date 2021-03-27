@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  --background: rgb(255, 255, 255);
+  --background-linear1: rgba(255, 255, 255, 1);
+  --background-linear2: rgba(255, 235, 130, 1);
+  --container: #353535;
+  --text-color: white;
+  --screen: #353535;
+  --btn-hover: black;
+  --btn-hover-text: #fff56d;
+  --shadow: rgba(59, 59, 59, 0.75);
+}
+.textos-contenedor {
+  height: 186px;
+}
+.c-body {
+  background: var(--background);
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  background: rgb(236, 236, 236);
+}
+.space.mobile {
+  display: none;
+}
+.screen {
+  position: relative;
+  width: 41.2vw;
+  height: 100px;
+}
+span {
+  font-weight: 300;
+  font-size: 100px;
+
+  left: 0;
+}
+.nav {
+  height: 60px;
+  width: 100%;
+  background: #2a2a2a;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.cubo {
+  display: grid;
+  grid-template-rows: 12px 12px 12px;
+  grid-template-columns: 12px 12px 12px;
+
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.colors {
+  border: 0.1px solid #2a2a2a;
+  border-radius: 1px;
+}
+.titulo {
+  display: flex;
+}
+.titulo h1 {
+  color: white;
+}
+
+.learn {
+  text-decoration: none;
+  color: white;
+}
+
+.colors:nth-child(1) {
+  background: #fc5c65;
+}
+.colors:nth-child(2) {
+  background: #ffffff;
+}
+.colors:nth-child(7) {
+  background: #ffffff;
+}
+
+.colors:nth-child(3) {
+  background: #fd9644;
+}
+
+.colors:nth-child(4) {
+  background: #26de81;
+}
+.colors:nth-child(5) {
+  background: #26de81;
+}
+
+.colors:nth-child(9) {
+  background: #26de81;
+}
+
+.colors:nth-child(6) {
+  background: #3867d6;
+}
+
+.colors:nth-child(8) {
+  background: #fed330;
+}
+
+.c-btn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  margin: 15px 100px;
+}
+.c-btn > button {
+  display: block;
+  background: none;
+  border: none;
+  outline: inherit;
+  cursor: pointer;
+  height: 80px;
+  border-radius: 50%;
+  font-size: 50px;
+}
+
+#work2 {
+  position: absolute;
+  top: 100px;
+  left: -60%;
+  width: 100px;
+  height: 200px;
+  color: white;
+  background: black;
+}
+
+#time.black {
+  color: black;
+}
+#time.red {
+  color: #ea2027;
+}
+#time.green {
+  color: #4cd137;
+}
+.table {
+  display: flex;
+  height: 110px;
+  width: 100%;
+
+  right: 0;
+  flex-direction: column;
+}
+
+.average {
+  display: block;
+}
+.container {
+  position: absolute;
+  right: 40px;
+}
+
+.timeContainer-p {
+  display: inline-block;
+}
+
+.delete {
+  color: rgb(238, 31, 31);
+  cursor: pointer;
+}
+
+.space h3 {
+  font-weight: 400;
+}
+
+.space {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 1050px) {
+  #time {
+    font-size: 64px;
+  }
+  .scramble p {
+    text-align: center;
+  }
+  .screen {
+    width: 100%;
+    height: 60px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .space.pc {
+    display: none;
+  }
+  .space.mobile {
+    display: block;
+  }
+  .movil-h3 {
+    text-align: center;
+  }
+  .container {
+    position: unset;
+  }
+  .textos-contenedor {
+    width: 70%;
+    margin: auto;
+    height: 130px;
+  }
+
+  .c-body > div {
+    margin: 10px;
+  }
+
+  .titulo h1 {
+    font-size: 20px;
+    display: none;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  .textos-contenedor {
+    width: 250px;
+  }
+  .textos-contenedor h3 {
+    text-align: center;
+  }
+  .timeContainer p {
+    margin-left: 55px;
+  }
+  .prom {
+    text-align: center;
+  }
+  .movil-h3 {
+    display: block;
+  }
+  .table {
+    height: 55px;
+  }
+}
+
+#time,
+.movil-h3,
+.scramble,
+.textos-contenedor h3,
+.table,
+.prom,
+#worsTime,
+.average,
+.titulo,
+.learn {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
